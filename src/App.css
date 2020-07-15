@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+/* Global */
+
+body {
+    color: #fff;
+    background-color: #15202b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+    list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    background: #1da1f2;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #1da1f2;
+    border-radius: 20px;
+    padding: 1% 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    background: #1a8cd9;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #1a8cd9;
+    border-radius: 20px;
+    padding: 1% 5%;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+svg {
+    font-size: 1.3rem;
+}
+
+/* Menus */
+.mainMenu .eachItems {
+    line-height: 300%;
+}
+
+.mainMenu, .mainMenuItems {
+    padding-left: 0;
+}
+
+.mainMenu .eachItems li:hover {
+    font-size: 1.3rem;
+}
+
+.eachItems {
+    font-weight: bold;
+}
+
+.menuTweetButton {
+    width: 100%;
+    padding: 0 4%;
+    margin-top: 10%;
+}
+
+
+/* Postarea */
+.compose {
+    margin-top: 2%;
+}
+
+.mainPosts {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.postsHeader {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2%;
+}
+.postsHeader h4, .postsHeader svg {
+    display: inline;
+    margin: 0 2%;
+}
+
+.postsHeader svg {
+    float: right;
+}
+
+.tweetContent {
+    background: #15202b;
+    border: none;
+    width: 80%;
+    display: inline;
+    word-wrap: break-word;
+}
+
+.eachPost p {
+    word-wrap: break-word;
+}
+
+.eachPost img {
+    width: 10%;
+}
+
+.composeAreaImg img {
+    width: 100%;
+}
+
+.composeArea {
+    margin: 0;
+    width: 100%;
+}
+
+.composeAreaImg {
+    float: left;
+    width: 10%;
+}
+
+.composeAreaText {
+    overflow: hidden;
+    width: 90%;
+}
+
+.moreOptions, .submitPostBtn {
+    display: inline-block;
+}
+
+.moreOptions {
+    width: 80%;
+}
+
+.moreOptions svg {
+    margin-right: 5%;
+}
+
+.submitPostBtn {
+    float: right;
+}
+
+.eachPost p {
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 5%;
+    border-top: 1px solid #fff;
+}
+
+.eachPost svg {
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.eachPostDateTime {
+    color: grey;
+    float: right;
+}
+
+/* customize */
+.customize {
+    margin-top: 5%;
+    padding-top: 10%;
+    text-align: center;
+    border-top: 1px solid #fff;
+}
+
+.customizeBtn {
+    margin-top: 5%;
+}
+
+/* Etc */
+
+#mainEtc {
+    display: block;
+}
+
+.mainEtc {
+    padding-right: 0;
+}
+
+.whatsHappening h5,
+.whatsHappening h6 {
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+}
+
+.whatsHappening small, .whoToFollow small {
+    color: grey;
+}
+
+.whoToFollow h5 {
+    margin-top: 20%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+}
+
+.whoToFollow h6,
+.whoToFollow small {
+    margin: 0;
+}
+
+.whoToFollow small {
+    padding-bottom: 10%;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+/* Media query */
+@media(max-width: 300px) {
+    #mainEtc {
+        display: none !important;
+    }
 }
